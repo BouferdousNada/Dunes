@@ -13,13 +13,6 @@ This work was developed as part of a Master's thesis in Geomatics at Université
 - ✅ Ablation studies with and without **Feature Pyramid Networks (FPN)**.
 - ✅ Impact analysis of **data augmentation** strategies on training/validation.
 
-## 👩‍💻 Author
-
-Nada Bouferdous
-Master’s student in Geomatics
-Université Laval, Canada
-Nada Bouferdous | bouferdousnada2@gmail.com
-
 ## 📊 Results & Metrics
 
 Evaluation metrics include:
@@ -28,3 +21,11 @@ Precision / Recall
 F1-score
 
 Full results and ablation study details are provided in the thesis and related publications.
+
+## 👩‍💻 Author
+
+Nada Bouferdous
+Master’s student in Geomatics
+Université Laval, Canada
+Nada Bouferdous | bouferdousnada2@gmail.com
+
