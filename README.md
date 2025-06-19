@@ -1,4 +1,3 @@
-# Dunes
 # Adapting Mask R-CNN for instance segmentation of submarine dunes on bathymetric digital models (DBMs)
 
 This repository contains the code and configurations used for the **instance segmentation of underwater dunes** from **Digital Bathymetric Models (DBMs)** using a **customized Mask R-CNN** model.  
