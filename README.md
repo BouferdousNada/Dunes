@@ -20,3 +20,12 @@ Nada Bouferdous
 Master’s student in Geomatics
 Université Laval, Canada
 Nada Bouferdous | bouferdousnada2@gmail.com
+
+## 📊 Results & Metrics
+
+Evaluation metrics include:
+mAP
+Precision / Recall
+F1-score
+
+Full results and ablation study details are provided in the thesis and related publications.
