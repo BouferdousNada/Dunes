@@ -13,3 +13,10 @@ This work was developed as part of a Master's thesis in Geomatics at Université
 - ✅ Experiments with **frozen**, **partially unfrozen**, and **fully unfrozen** backbones.
 - ✅ Ablation studies with and without **Feature Pyramid Networks (FPN)**.
 - ✅ Impact analysis of **data augmentation** strategies on training/validation.
+
+## 👩‍💻 Author
+
+Nada Bouferdous
+Master’s student in Geomatics
+Université Laval, Canada
+LinkedIn | Email
