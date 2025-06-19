@@ -19,4 +19,4 @@ This work was developed as part of a Master's thesis in Geomatics at Université
 Nada Bouferdous
 Master’s student in Geomatics
 Université Laval, Canada
-LinkedIn | Email
+Nada Bouferdous | bouferdousnada2@gmail.com
