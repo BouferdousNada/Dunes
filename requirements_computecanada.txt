@@ -1,1 +1,35 @@
+#!/bin/bash
+#SBATCH --mem-per-cpu=4G
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=16
+#SBATCH --gpus=1
+#SBATCH --time=7-00:00:00
+#SBATCH --mail-type=ALL
 
+module load python/3.10.2
+module load StdEnv/2020 python/3.10 cuda/11.7 cudnn/8.9
+module load gcc/9.3.0 opencv/4.8.0
+
+path_venv=/scratch/nabou603/projet/maskrcnn
+source $path_venv/bin/activate
+
+pip install cython
+pip install h5py==3.8.0+computecanada
+pip install numpy==1.25.2+computecanada
+pip install ipython-genutils==0.2.0+computecanada
+pip install ipython-sql==0.5.0+computecanada
+pip install keras==2.14.0+computecanada
+pip install pillow==10.1.0+computecanada
+pip install matplotlib==3.7.2+computecanada
+pip install opencv-contrib-python==4.8.0.76
+pip install opencv-python==4.8.0.76
+pip install scikit-image==0.22.0+computecanada
+pip install scipy==1.11.2+computecanada
+pip install tensorboard==2.14.1
+pip install tensorflow==2.14.0
+
+CUDA_HOME=/cvmfs/soft.computecanada.ca/easybuild/software/2020/Core/cudacore/11.7.0
+export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_HOME
+
+python nucleus.py train --dataset=dataset --subset=train --weights="mask_rcnn_coco.h5" --edge-loss-smoothing-predi
+ctions --edge-loss-smoothing-groundtruth --edge-loss-filters sobel --edge-loss-weight-factor 1.0 --edge-loss-weight-entropy --edge-loss-norm l2 --edge-loss-weight-factor 1.0 --run-name "experiment_with_edge_agreement" (or any other command)
